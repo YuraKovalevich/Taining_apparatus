@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@300;400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="newexam.css" rel="stylesheet" />
+
+    <title>Patient table</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="header-title">
+        <strong>Регистрация нового обследования</strong>
+      </h1>
+    </header>
+    <div class="left">
+      <a href="../authorization/index.html">
+        <img src="../pics/left2.png" alt="left" onclick="LocalClear();"
+      /></a>
+    </div>
+    <section class="registration">
+      <div class="container">
+        <div class="second-block">
+          <ul class="sec_row">
+            <li>Регистрация пациента</li>
+            <li id="name"></li>
+            <li id="sec_name"></li>
+          </ul>
+          <form id="form">
+            <div class="second-block__row">
+              <label>Дата обследования</label>
+              <input
+                required
+                id="date"
+                class="date"
+                type="date"
+                value="2021-12-01"
+                min="2021-11-30"
+                max="2022-01-30"
+              />
+            </div>
+            <div class="second-block__row">
+              <label class="label">Тип физической нагрузки</label>
+              <select class="type" id="type">
+                <option id>Тип упражнения</option>
+                <option value="Бег">Бег</option>
+                <option value="Ходьба">Ходьба</option>
+                <option value="Велосипед">Велосипед</option>
+                <option value="Силовые упражнения">Силовые упражнения</option>
+                <option value="Плавание">Плавание</option>
+              </select>
+              <div class="second-block__row">
+                <label class="label">Измеряемые показатели </label>
+                <div>
+                  <input type="checkbox" id="pulse" value="Измерение пульса" />
+                  <label for="pulse">Измерение пульса</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    id="temp"
+                    value="Измерение температуры"
+                  />
+                  <label for="temp">Измерение температуры</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    id="press"
+                    value="Измерение кровяного давления"
+                  />
+                  <label for="press">Измерение кровяного давления</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    id="sat"
+                    value="Измерение сатурации крови"
+                  />
+                  <label for="sat">Измерение сатурации крови</label>
+                </div>
+                <a href="exam.html"
+                  ><button class="ex" type="submit">
+                    Зарегистрировать обследование
+                  </button></a
+                >
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="get_data.js"></script>
+    <script src="send_exam.js"></script>
+  </body>
+</html>

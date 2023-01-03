@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+a:focus {
+  outline: 0;
+}
+
+body {
+  width: 1920px;
+  background: #1c0036;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  min-height: 100vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    97deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(121, 9, 109, 1) 68%,
+    rgba(2, 0, 168, 1) 100%
+  );
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+.header {
+  text-align: center;
+  width: 100%;
+}
+.left {
+  margin-left: 2%;
+}
+.header-title {
+  line-height: 60px;
+  font-weight: 300;
+  color: #fff;
+}
+.second-block {
+  width: 680px;
+}
+
+.second-block__row {
+  display: flex;
+  flex-direction: column;
+}
+.second-block__row:nth-of-type(n + 2) {
+  margin-top: 32px;
+}
+
+.input,
+.sex {
+  margin-top: 13px;
+  padding-left: 20px;
+  font-size: 18px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  outline: none;
+}
+.sex {
+  height: 60px;
+}
+
+.input::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.input_std {
+  height: 60px;
+}
+
+.input:focus {
+  border-color: #00a092;
+  box-shadow: 0px 4px 30px rgba(0, 160, 146, 0.3);
+}
+
+.input_textarea {
+  height: 200px;
+  padding: 20px;
+  resize: none;
+}
+
+label {
+  text-decoration: none;
+  color: rgba(79, 255, 221, 0.77);
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: left;
+}
+
+.b_r,
+.b_t {
+  box-sizing: border-box;
+  background-color: #00a092;
+  width: 359px;
+  height: 74px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 67px;
+}
+
+.b_r:hover,
+.b_r:focus,
+.b_t:hover,
+.b_r:hover {
+  background: #05786e;
+  box-shadow: 0px 4px 30px rgba(0, 53, 48, 0.3);
+  cursor: pointer;
+  transform: rotateZ(-0.5deg);
+}
+
+.registration {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 500px;
+}
+#test,
+#test1,
+#test2 {
+  color: white;
+  margin-left: 100px;
+  margin-bottom: 100px;
+}
+.but {
+  width: 750px;
+  display: flex;
+  justify-content: space-between;
+}
+.tip:hover::after {
+  content: attr(data-title);
+  position: absolute;
+  z-index: 1;
+  background: #6c4bff9a;
+  opacity: 0.9;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 8px;
+  margin-left: -360px;
+  margin-top: 30px;
+}

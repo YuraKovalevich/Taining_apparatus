@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+a:focus {
+    outline: 0;
+}
+
+body {
+    width: 1920px;
+    background: #1c0036;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    min-height: 100vh;
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    overflow-y: hidden;
+}
+.header {
+    text-align: center;
+    width: 100%;
+}
+.header-title {
+    line-height: 60px;
+    font-weight: 300;
+    color: rgba(0, 1, 51, 0.55);;
+}
+.left {
+    margin-left: 2%;
+}
+.container {
+    width: 100%;
+}
+span {
+    color:#fff;
+}
+
+.second-block {
+    width: 680px;
+}
+.second-block__row {
+    display: flex;
+    flex-direction: column;
+}
+.second-block__row:nth-of-type(n + 2) {
+    margin-top: 32px;
+}
+
+.input, .type{
+    margin-top: 13px;
+    padding-left: 20px;
+    font-size: 18px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    outline: none;
+}
+.type {
+    height: 40px;
+
+}
+.date {
+    height: 40px;
+}
+.input::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+.input_std {
+    height: 60px;
+}
+
+.input:focus {
+    border-color: #00a092;
+    box-shadow: 0px 4px 30px rgba(0, 160, 146, 0.3);
+}
+
+.input_textarea {
+    height: 200px;
+    padding: 20px;
+    resize: none;
+}
+
+label {
+    text-decoration: none;
+    color: rgba(0, 1, 68, 0.78);
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.ex {
+    box-sizing: border-box;
+    background-color: rgba(0, 1, 68, 0.83);
+    width: 380px;
+    height: 80px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    margin-top: 67px;
+    margin-bottom: 150px;
+
+}
+.ex:hover, .ex:focus{
+    background: rgba(0, 1, 68, 0.9);
+    box-shadow: 0px 5px 10px rgba(250, 213, 213, 0.75);
+    cursor: pointer;
+}
+.second-block {
+    width: 680px;
+    padding-top: 2px;
+}
+.registration {
+    margin-left: 500px;
+}
+
+.f_row {
+    color: #806911;
+}
+.sec_row {
+    margin-top: 30px;
+    font-size: 22px;
+    color: rgba(0, 1, 68, 0.9);
+}
+ul li {
+    display: inline;
+    list-style-type: none;
+}
+#name, #sec_name {
+    color: rgb(89, 0, 255);
+}

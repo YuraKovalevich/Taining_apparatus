@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@300;400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="sensors.css" rel="stylesheet" />
+
+    <title>Sensors</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="header-title"><strong>Установка датчиков</strong></h1>
+    </header>
+    <div class="left">
+      <a href="../doctor/exam.html"
+        ><img src="../pics/left2.png" alt="left"
+      /></a>
+    </div>
+    <div class="patient">
+      <label> Датчики</label>
+    </div>
+    <div class="sens">
+      <div class="doctor">
+        <img src="../pics/doctor.png" width="420" height="600" />
+      </div>
+
+      <div class="sensors">
+        <span>Измерение давления</span>
+        <div class="zone2_press">
+          <img
+            src="../pics/press.png"
+            id="press"
+            draggable="true"
+            width="90"
+            height="90"
+          />
+        </div>
+        <span>Измерение температуры тела</span>
+        <div class="zone2_temp">
+          <img src="../pics/temp.png" id="temp" draggable="true" />
+        </div>
+        <span>Измерение пульса </span>
+        <div class="zone2_pulse">
+          <img src="../pics/pulse.png" id="pulse" draggable="true" />
+        </div>
+        <span>Измерение сатурации</span>
+        <div class="zone2_oxy">
+          <img src="../pics/oxy.png" id="sat" draggable="true" />
+        </div>
+      </div>
+      <div class="human">
+        <div class="zone1_press"></div>
+        <div class="zone1_temp"></div>
+        <div class="zone1_pulse"></div>
+        <div class="zone1_oxy"></div>
+        <img src="../pics/human.png" width="560" height="560" />
+      </div>
+    </div>
+    <a href="../graphics/graphics.html"
+      ><button class="start">Старт сеанса обследования</button></a
+    >
+    <script src="sensors.js"></script>
+  </body>
+</html>

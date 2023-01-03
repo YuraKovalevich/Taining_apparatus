@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@300;400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="registration.css" rel="stylesheet" />
+    <title>Registration</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="header-title">
+        <strong>Регистрация нового пользователя</strong>
+      </h1>
+    </header>
+    <div class="left">
+      <a href="../authorization/index.html"
+        ><img src="../pics/left2.png" alt="left"
+      /></a>
+    </div>
+    <div class="registration">
+      <div class="container">
+        <div class="second-block">
+          <form id="form">
+            <div class="second-block__row">
+                <label>Имя</label>
+                <input
+                required
+                minlength="3" maxlength="12"
+                class="input input_std"
+                id="username"
+                type="text"
+                name="name"
+                placeholder="Введите имя пациента"/>
+                
+              </div>
+              <div class="second-block__row">
+              <label>Фамилия</label>
+              <input
+                required
+                minlength="3" maxlength="12"
+                class="input input_std"
+                id="sec_name"
+                type="text"
+                name="sec_name"
+                placeholder="Введите фамилию пациента"
+              />
+            </div>
+            <div class="second-block__row">
+              <label>Возраст</label>
+              <input
+                required
+                min="1" max="99"
+                class="input input_std"
+                id="age"
+                type="number"
+                name="age"
+                placeholder="Введите возраст пациента"
+              />
+            </div>
+            <div class="second-block__row">
+              <label class="label">Пол</label>
+              <select class="sex" id="sex" name="sex" required>
+                <option class="sex"></option>
+                <option value="M">Мужчина</option>
+                <option value="W">Женщина</option>
+              </select>
+            </div>
+            <div class="but">
+              <div class="tip" data-title = ' Мы передадим данные этого пациента Доктору ' >
+          <button class="b_t" type="submit">
+                Зарегестрировать пациента
+              </button>
+                </div>
+              
+                <a href="../table/table.html"><button class="b_r" type="button">
+                  Таблица пациентов
+                </button></a>
+        </div>
+      </form>
+      </div>
+    </div>
+    <script src="registration.js"></script>
+  </body>
+</html>

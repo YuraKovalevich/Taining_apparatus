@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  user-select: none;
+}
+a:focus {
+  outline: 0;
+}
+
+body {
+  width: 1920px;
+  background: #1c0036;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  min-height: 150vh;
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+.header {
+  text-align: center;
+  width: 100%;
+}
+.header-title {
+  line-height: 60px;
+  font-weight: 300;
+  color: rgba(0, 1, 51, 0.55);
+}
+.left {
+  margin-left: 2%;
+}
+label {
+  text-decoration: none;
+  color: rgba(0, 1, 68, 0.78);
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  line-height: 27px;
+  text-align: left;
+  margin-top: 10px;
+}
+.sens {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.doctor {
+  margin-left: 50px;
+  margin-top: -50px;
+}
+.human {
+  margin-bottom: 400px;
+}
+.patient {
+  text-align: center;
+}
+.sensors {
+  flex-direction: column;
+  margin-left: 120px;
+  width: 120px;
+}
+#press,
+#temp,
+#pulse,
+#sat {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 30px;
+}
+
+.zone1_press,
+.zone1_temp,
+.zone1_pulse,
+.zone1_oxy {
+  border: solid rgba(73, 13, 229, 0.63) 0.5px;
+  width: 90px;
+  height: 90px;
+  background-color: rgba(0, 255, 34, 0);
+}
+.zone2_press,
+.zone2_temp,
+.zone2_pulse,
+.zone2_oxy {
+  width: 90px;
+  height: 90px;
+  border: solid rgba(255, 148, 86, 0.49) 0.5px;
+}
+.zone1_press {
+  position: absolute;
+  margin-top: 130px;
+  margin-left: 220px;
+}
+.zone1_temp {
+  position: absolute;
+  margin-left: 270px;
+}
+.zone1_pulse {
+  position: absolute;
+  margin-top: 300px;
+  margin-left: 200px;
+}
+.zone1_oxy {
+  position: absolute;
+  margin-top: 120px;
+  margin-left: 350px;
+}
+.start {
+  display: block;
+  box-sizing: border-box;
+  background-color: rgba(0, 1, 68, 0.83);
+  width: 700px;
+  height: 74px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  margin-left: 670px;
+  margin-top: -300px;
+  margin-bottom: 150px;
+  transform: scale(1);
+  transition: 1.5s;
+}
+.start:hover,
+.start:focus {
+  background: rgba(0, 1, 68, 0.9);
+  box-shadow: 1px 5px 8px rgba(153, 0, 255, 0.363);
+  cursor: pointer;
+  transform: scale(1.05);
+}
